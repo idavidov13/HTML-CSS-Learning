@@ -26,7 +26,8 @@ Paragraph default: 1.6
 - Tints:   
 #fdf2e9
 #fae5d3
--Shades: #cf711f
+#eb984e
+-Shades: #cf711f #45260a
 - Accents:
 - Greys: #555, #333, #ccc, #888, #6f6f6f
 
@@ -36,6 +37,8 @@ https://www.uifaces.co/
 https://ionic.io/ionicons
 
 --- 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 
@@ -138,6 +141,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -147,6 +151,9 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -171,6 +178,18 @@ body {
   background-color: #fdf2e9;
   /* Adding inside border */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -207,6 +226,11 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .margin-right-sm {
