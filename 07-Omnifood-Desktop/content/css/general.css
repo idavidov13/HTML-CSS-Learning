@@ -29,7 +29,7 @@ Paragraph default: 1.6
 #eb984e
 -Shades: #cf711f #45260a
 - Accents:
-- Greys: #555, #333, #ccc, #888, #6f6f6f
+- Greys: #555, #333, #ccc, #888, #6f6f6f, #767676
 
 --- 03 IMAGES
 https://unsplash.com/
@@ -99,6 +99,14 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 .grid--center-v {
