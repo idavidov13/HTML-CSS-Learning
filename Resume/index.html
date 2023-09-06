@@ -36,7 +36,7 @@
   <body>
     <!-- MAIN NAVIGATION -->
     <header class="header">
-      <span class="name"> Ivan Davidov </span>
+      <a class="name" href="#"> Ivan Davidov </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#experience">Experience</a></li>
@@ -103,17 +103,22 @@
               relentlessly pursue professional excellence and unparalleled
               outcomes.
             </p>
-            <a href="#cta" class="btn btn--full margin-right-sm">Contact Me</a>
-            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+            <a
+              href="mailto:ivandavidov13@yahoo.com"
+              class="btn btn--full margin-right-sm"
+              onclick="openLink('mailto:ivandavidov13@yahoo.com')"
+              >Contact Me</a
+            >
+            <a href="#experience" class="btn btn--outline">Learn more &darr;</a>
           </div>
           <div class="profile-box">
             <img
-              src="img/profile-image.JPG"
+              src="img/profile-image.webp"
               class="profile-img"
-              alt="Woman enjoing food, meals in storage container, and food bows on a table"
+              alt="Picture of Ivan Davidov"
+              onclick="openModal('img/profile-image.JPG')"
             />
           </div>
-
           <div class="profile-info">
             <ul class="social-links">
               <li>
@@ -167,8 +172,9 @@
       </section>
       <!--  -->
       <!-- EXPERIENCE SECTION -->
+      <!--  -->
       <section class="section-experience section--margin" id="experience">
-        <div class="container space--between">
+        <div class="container">
           <span class="subheading">What I do for a living</span>
           <h2 class="heading-secondary">Professional Experience</h2>
         </div>
@@ -178,10 +184,9 @@
           <div class="company">
             <div class="job-img-box">
               <img
-                src="img/Teva.png"
+                src="img/Teva.webp"
                 class="job-img"
-                alt="iPhone app
-            preferences selection screen"
+                alt="Teva Pharmaceuticals logo"
               />
             </div>
             <span class="company-name"
@@ -189,7 +194,7 @@
             >
           </div>
           <div class="job-text-box">
-            <p class="job-years">08.2023 - Present</p>
+            <p class="job-years">08.2023 &mdash; Present</p>
             <h3 class="heading-tertiary">IT Quality Assurance Expert</h3>
             <p class="job-description"></p>
             <ul class="job-attributes">
@@ -238,14 +243,13 @@
               <img
                 src="img/SoftGroup.png"
                 class="job-img big--img"
-                alt="iPhone app
-            preferences selection screen"
+                alt="SoftGroup logo"
               />
             </div>
             <span class="company-name">SoftGroup, Sofia, Bulgaria</span>
           </div>
           <div class="job-text-box">
-            <p class="job-years">09.2022 - 08.2023</p>
+            <p class="job-years">09.2022 &mdash; 08.2023</p>
             <h3 class="heading-tertiary">
               Quality Assurance and Validation Specialist
             </h3>
@@ -308,14 +312,13 @@
               <img
                 src="img/Soft-Academy.png"
                 class="job-img mid--img"
-                alt="iPhone app
-            preferences selection screen"
+                alt="Soft Academy logo"
               />
             </div>
             <span class="company-name">Soft Academy, Remote</span>
           </div>
           <div class="job-text-box">
-            <p class="job-years">05.2022 - 08.2022</p>
+            <p class="job-years">05.2022 &mdash; 08.2022</p>
             <h3 class="heading-tertiary">Quality Assurance Intern</h3>
             <p class="job-description"></p>
             <ul class="job-attributes">
@@ -354,10 +357,9 @@
           <div class="company">
             <div class="job-img-box">
               <img
-                src="img/ministry.png"
+                src="img/ministry.webp"
                 class="job-img big--img"
-                alt="iPhone app
-            preferences selection screen"
+                alt="Ministry of Environment and Water Logo"
               />
             </div>
             <span class="company-name"
@@ -365,7 +367,7 @@
             >
           </div>
           <div class="job-text-box">
-            <p class="job-years">11.2018 - 09.2021</p>
+            <p class="job-years">11.2018 &mdash; 09.2021</p>
             <h3 class="heading-tertiary">
               Chief Associate Managing European Projects and Programs
             </h3>
@@ -424,7 +426,7 @@
             <span class="company-name">Sofiyska Voda, Sofia, Bulgaria</span>
           </div>
           <div class="job-text-box">
-            <p class="job-years">05.2015 - 11.2018</p>
+            <p class="job-years">05.2015 &mdash; 11.2018</p>
             <h3 class="heading-tertiary">Shift Team Lead</h3>
             <p class="job-description"></p>
             <ul class="job-attributes">
@@ -472,7 +474,7 @@
             <span class="company-name">Betonintelekt, Sofia, Bulgaria</span>
           </div>
           <div class="job-text-box">
-            <p class="job-years">10.2013 - 05.2015</p>
+            <p class="job-years">10.2013 &mdash; 05.2015</p>
             <h3 class="heading-tertiary">Engineering technologist</h3>
             <p class="job-description"></p>
             <ul class="job-attributes">
@@ -505,14 +507,19 @@
       </section>
       <!--  -->
       <!-- SKILLS SECTION -->
-      <section class="section-about">
+      <!--  -->
+      <section class="section-skills">
+        <div class="container space--between">
+          <span class="subheading">How i achieve the best results</span>
+          <h2 class="heading-secondary">Professional Skills</h2>
+        </div>
         <div
           class="container grid grid--3-cols margin-bottom-md section-skills"
         >
           <!-- SOFT SKILLS SECTION -->
           <div class="skill" id="skills">
             <img
-              src="img/SoftSkills.png"
+              src="img/SoftSkills.webp"
               class="skills-img"
               alt="Illustration of a team climbing stairs "
             />
@@ -596,7 +603,7 @@
           <!-- TECH STACK -->
           <div class="skill" id="tech-stack">
             <img
-              src="img/TeckSkills.png"
+              src="img/TeckSkills.webp"
               class="skills-img margin--bot"
               alt="Illustration of a guy explaining tech stuff"
             />
@@ -677,13 +684,13 @@
                 <li class="misc-attribute">
                   <span class="achievements-text"
                     >Chief designer of the technological part for the project
-                    "Reconstruction of WWTP - Pleven" - budget €14 M
+                    "Reconstruction of WWTP &mdash; Pleven" &mdash; budget €14 M
                   </span>
                 </li>
                 <li class="misc-attribute">
                   <span class="achievements-text"
                     >Co-chief designer of the technological part of the project
-                    "Construction of WWTP – Aytos" - budget €5 M
+                    "Construction of WWTP &mdash; Aytos" &mdash; budget €5 M
                   </span>
                 </li>
                 <li class="misc-attribute">
@@ -697,6 +704,395 @@
           </div>
         </div>
       </section>
+      <!--  -->
+      <!-- CERTIFICATES SECTION -->
+      <!--  -->
+      <section class="section-certificates" id="certificates">
+        <div class="certificates-container">
+          <span class="subheading">My learning path</span>
+          <h2 class="heading-secondary">Certificates</h2>
+          <div class="certificates">
+            <!--  -->
+            <!-- Front-End Development -->
+            <!--  -->
+            <ul class="cert-list">
+              <span class="cert-title">Front-End Development</span>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://softuni.bg/certificates/details/159505/33947ea8"
+                  target="_blank"
+                >
+                  Programming Basics (JavaScript) &mdash; January 2023 &mdash;
+                  SoftUni</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.udemy.com/certificate/UC-dc389cb5-7f2c-4e02-ad2a-4c3526cdaa17/"
+                  target="_blank"
+                >
+                  The Complete JavaScript course 2023: From Zero to Expert
+                  &mdash; Udemy</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.udemy.com/certificate/UC-065528fc-6013-41cf-a072-f76ef5d15b5e/"
+                  target="_blank"
+                >
+                  Build Responsive Real-World Websites with HTML and CSS &mdash;
+                  Udemy</a
+                >
+              </li>
+            </ul>
+            <!--  -->
+            <!-- Quality Assurance -->
+            <!--  -->
+            <ul class="cert-list">
+              <span class="cert-title">Quality Assurance</span>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.dropbox.com/s/xdr4aegsphk21g2/Certificate_Ivan_Davidov.pdf?dl=0"
+                  target="_blank"
+                >
+                  ISTQB® Certified Tester, Foundation Level &mdash; ISTQB®</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.udemy.com/certificate/UC-80f1fcc7-3e96-4997-a524-8d4106b7ae9e/"
+                  target="_blank"
+                >
+                  Cypress &mdash; Modern Automation Testing from Scratch +
+                  Frameworks &mdash; Udemy</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.udemy.com/certificate/UC-2b72b85d-b2fe-49b2-9f70-2022f2631fc6/"
+                  target="_blank"
+                >
+                  Postman: The Complete Guide &mdash; REST API Testing &mdash;
+                  Udemy</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon></span
+                ><a
+                  class="main-nav-link"
+                  href="https://softuni.bg/certificates/details/172389/b64c50b2"
+                  target="_blank"
+                >
+                  MySQL &mdash; May 2023 &mdash; SoftUni</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon></span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.dropbox.com/s/lmdqspe4unkreps/4.%20QA.jpeg?dl=0"
+                  target="_blank"
+                >
+                  Quality Assurance &mdash; Software Testing &mdash; Soft
+                  Academy</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon></span
+                ><a
+                  class="main-nav-link"
+                  href="https://softuni.bg/certificates/details/153875/015a18ff"
+                  target="_blank"
+                >
+                  QA Basics &mdash; January 2023 &mdash; SoftUni</a
+                >
+              </li>
+            </ul>
+            <!--  -->
+            <!-- Management -->
+            <!--  -->
+            <ul class="cert-list">
+              <span class="cert-title">Management</span>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.dropbox.com/s/ts99cj6aefo7yk6/5.%20Professional%20Scrum%20Master%20I.pdf?dl=0"
+                  target="_blank"
+                >
+                  Professional Scrum Master™ I (PSM I) &mdash; Scrum.org</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.dropbox.com/s/c44in28kuql1i5o/1.%20PAI.pdf?dl=0"
+                  target="_blank"
+                >
+                  Managing and Monitoring Successful Projects: The complete
+                  project cycle &mdash; Public Administration International</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon> </span
+                ><a
+                  class="main-nav-link"
+                  href="https://softuni.bg/certificates/details/171131/f7bd907f"
+                  target="_blank"
+                >
+                  Agile Advanced with Scrum &mdash; March 2023 &mdash;
+                  SoftUni</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon></span
+                ><a
+                  class="main-nav-link"
+                  href="https://softuni.bg/certificates/details/163565/26851b07"
+                  target="_blank"
+                >
+                  Agile Essentials with Scrum &mdash; February 2023 &mdash;
+                  SoftUni</a
+                >
+              </li>
+              <li class="cert-item">
+                <span class="job-icon-container">
+                  <ion-icon
+                    class="skill-icon"
+                    name="bookmarks"
+                  ></ion-icon></span
+                ><a
+                  class="main-nav-link"
+                  href="https://www.dropbox.com/s/eyc3lbkqp23082j/3.%20IPA.pdf?dl=0"
+                  target="_blank"
+                >
+                  Managing Projects &mdash; Institute of Public
+                  Administration</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/ISTQB.webp"
+                alt="Certificate_Ivan_Davidov_istqb"
+                onclick="openModal('img/Certificates/ISTQB.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/pbjs.png"
+                alt="Certificate_Ivan_Davidov_programming_basics_javascript"
+                onclick="openModal('img/Certificates/pbjs.png')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/mysql.png"
+                alt="Certificate_Ivan_Davidov_mysql"
+                onclick="openModal('img/Certificates/mysql.png')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/advanceagile.png"
+                alt="Certificate_Ivan_Davidov_agile_softuni"
+                onclick="openModal('img/Certificates/advanceagile.png')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/essentialsagile.png"
+                alt="Certificate_Ivan_Davidov_agile_softuni"
+                onclick="openModal('img/Certificates/essentialsagile.png')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/pai.webp"
+                alt="Certificate_Ivan_Davidov_pai_managing_projects"
+                onclick="openModal('img/Certificates/pai.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/qabasics.png"
+                alt="Certificate_Ivan_Davidov_quality_assurance_softuni"
+                onclick="openModal('img/Certificates/qabasics.png')"
+              />
+            </figure>
+          </div>
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/psmI.webp"
+                alt="Certificate_Ivan_Davidov_scrum_master_psmi"
+                onclick="openModal('img/Certificates/psmI.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/softacademy.webp"
+                alt="Certificate_Ivan_Davidov_quality_assurance_soft_academy"
+                onclick="openModal('img/Certificates/softacademy.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/udemyjs.webp"
+                alt="Certificate_Ivan_Davidov_udemy_javascript"
+                onclick="openModal('img/Certificates/udemyjs.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/udemyhtmlcss.webp"
+                alt="Certificate_Ivan_Davidov_udemy_html_css"
+                onclick="openModal('img/Certificates/udemyhtmlcss.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/udemycypress.webp"
+                alt="Certificate_Ivan_Davidov_cypress"
+                onclick="openModal('img/Certificates/udemycypress.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/Postman.webp"
+                alt="Certificate_Ivan_Davidov_postman"
+                onclick="openModal('img/Certificates/Postman.webp')"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/Certificates/ipa.webp"
+                alt="Certificate_Ivan_Davidov_ipa_managing_projects"
+                onclick="openModal('img/Certificates/ipa.webp')"
+              />
+            </figure>
+          </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="" id="modalImg" class="modal-content" />
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div>
+          <p class="copyright">Created By</p>
+          <a class="name name--footer" href="#"> Ivan Davidov </a>
+          <p class="copyright">
+            in
+            <span class="year">2022</span>
+            All rights reserved.
+          </p>
+        </div>
+        <div class="logo-col">
+          <a
+            class="footer-link"
+            href="mailto:ivandavidov13@yahoo.com"
+            onclick="openLink('mailto:ivandavidov13@yahoo.com')"
+          >
+            <ion-icon class="social-icon" name="mail-open-outline"></ion-icon>
+          </a>
+          <a
+            class="footer-link"
+            href="tel:+359883368850"
+            onclick="openLink('tel:+359883368850')"
+          >
+            <ion-icon class="social-icon" name="call-outline"></ion-icon>
+          </a>
+          <a
+            class="footer-link"
+            href="https://linkedin.com/in/ivdavidov"
+            onclick="openLink('https://linkedin.com/in/ivdavidov')"
+            target="_blank"
+          >
+            <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+          </a>
+          <a
+            class="footer-link"
+            href="https://github.com/idavidov13"
+            onclick="openLink('https://github.com/idavidov13')"
+            target="_blank"
+          >
+            <ion-icon class="social-icon" name="logo-github"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

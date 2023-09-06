@@ -13,9 +13,10 @@
 }
 
 .name {
+  text-decoration: none;
   color: #333;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4.4rem;
 }
 
 .main-nav-list {
@@ -44,7 +45,7 @@
 .main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
-  color: #fff8f0;
+  color: #fff;
   background-color: #392f5a;
 }
 
@@ -76,16 +77,16 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.804);
+  background-color: rgba(226, 244, 241, 0.925);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
-.sticky .section-hero {
-  margin-top: 9.6rem;
+.sticky .section-about {
+  margin-top: 12rem;
 }
 /*********************************/
 /* ABOUT ME SECTION */
@@ -93,7 +94,7 @@
 
 .section-about {
   background-color: #e2f4f1;
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 4.8rem 0 4.8rem 0;
 }
 
 .about-text-box {
@@ -169,6 +170,10 @@
 /*********************************/
 /* EXPERIENCE SECTION */
 /*********************************/
+.section-experience {
+  padding: 6.1rem 0 0 0;
+}
+
 .space--between {
   padding-top: 2.4rem;
 }
@@ -279,6 +284,11 @@
 /*********************************/
 /* SKILLS SECTION */
 /*********************************/
+.section-skills {
+  background-color: #e2f4f1;
+  padding: 0rem 2.4rem 2.4rem 2.4rem;
+}
+
 .skills-img {
   width: 100%;
 }
@@ -314,7 +324,8 @@
   gap: 2rem;
 }
 
-.skill-attribute {
+.skill-attribute,
+.cert-item {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -338,14 +349,16 @@
   margin-bottom: 3.6rem;
 }
 
-.misc-title {
+.misc-title,
+.cert-title {
   font-size: 2.4rem;
   color: #333533;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
-.misc-attributes {
+.misc-attributes,
+.cert-list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -369,4 +382,146 @@
   align-items: center;
   margin-bottom: 1rem;
 }
+/*********************************/
+/* CERTIFICATES SECTION */
+/*********************************/
+.section-certificates {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+}
 
+.certificates {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.certificates-container {
+  padding: 6.1rem 9.6rem;
+}
+
+.certificates-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.certificates-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.certificates-name {
+  font-size: 1.8rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+  align-items: center;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.3);
+}
+
+/* THE MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(26, 21, 40, 0.97);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 95%;
+  max-height: 95%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #faecc7;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff8811;
+}
+
+/*********************************/
+/* FOOTER SECTION */
+/*********************************/
+.footer {
+  padding: 3.6rem 0;
+  background-color: #fdf2e9;
+  border-top: 1px solid #c4bcdc;
+}
+
+.name--footer {
+  font-size: 3.6rem;
+  color: #767676;
+}
+
+.social-icon {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.logo-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transform: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #333;
+}

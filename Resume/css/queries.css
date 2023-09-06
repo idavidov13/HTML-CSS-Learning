@@ -1,0 +1,275 @@
+/* rem and em do NOT depent on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/*********************************/
+/* BELOW 1344px  (Smaller desktops)*/
+/*********************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*********************************/
+/* BELOW 1200px  (Landscape tablets)*/
+/*********************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .about {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .section-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #misc {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .margin-bottom-md {
+    margin-bottom: 0rem;
+  }
+
+  .misc-attribute:last-child {
+    margin-bottom: 0rem;
+  }
+
+  .section-certificates {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+  }
+}
+/*********************************/
+/* BELOW 944px  (Tablets)*/
+/*********************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.50 */
+    font-size: 50%;
+  }
+
+  .header {
+    height: 6.2rem;
+  }
+
+  .sticky .section-about {
+    margin-top: 6.2rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .about-text-box {
+    grid-column: span 2;
+  }
+
+  .profile-box {
+    grid-row: span 1;
+    grid-column: 1;
+  }
+
+  .about-text-box,
+  .profile-box {
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 100%;
+  }
+
+  .section-skills {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .misc {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .certificates-container {
+    padding: 6.1rem 3.2rem;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  .misc-content {
+    padding: 1rem 4.8rem 1rem 4.8rem;
+  }
+  /*********************************/
+  /*MOBILE NAVIGATION*/
+  /*********************************/
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 248, 240, 0.6);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* Hide navigation */
+    opacity: 0;
+    /* Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Hide it to screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
+}
+/*********************************/
+/* BELOW 704px  (Smaller Tablets)*/
+/*********************************/
+@media (max-width: 44em) {
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .section-skills {
+    grid-template-columns: 1fr;
+  }
+
+  #skills {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #tech-stack {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  #misc {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*********************************/
+/* BELOW 544px  (Phones)*/
+/*********************************/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .about {
+    padding: 0 3.2rem;
+    gap: 2rem;
+  }
+
+  .section-about {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .profile-img {
+    width: 100%;
+  }
+
+  .profile-link .social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2.4rem;
+  }
+}
