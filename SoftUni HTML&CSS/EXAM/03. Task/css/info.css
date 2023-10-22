@@ -1,0 +1,36 @@
+.section-info {
+  color: #37282b;
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 10em 3em 8em 4em;
+  display: flex;
+  gap: 4em;
+}
+
+.section-info-article {
+  max-width: 45%;
+}
+
+.section-info-title {
+  font: 3.4em/1.3 "PT Serif", serif;
+  letter-spacing: 3px;
+  margin-bottom: 0.5em;
+}
+
+.section-info-paragraph {
+  font: 1.2em/1.8 "PT Sans", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 2.4em;
+}
+
+.btn {
+  font-size: 1.25em;
+  color: #b89375;
+  display: inline-block;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #b89375;
+  outline: 1px solid #b89375;
+  padding: 0.5em 1em;
+  font-weight: 700;
+}

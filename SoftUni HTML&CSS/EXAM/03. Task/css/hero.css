@@ -1,0 +1,18 @@
+.hero-section {
+  color: white;
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 0em 3em 20em 4em;
+}
+
+.hero-title {
+  font: 4em/1.3 "PT Serif", serif;
+  letter-spacing: 1px;
+}
+
+.hero-paragraph {
+  margin-top: 1em;
+  width: 55%;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}

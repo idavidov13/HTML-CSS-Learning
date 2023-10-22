@@ -1,0 +1,35 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em 4em 4em;
+  align-items: center;
+}
+
+.logo {
+  width: 7em;
+  height: auto;
+}
+
+.main-header-nav ul {
+  display: flex;
+}
+
+.main-header-nav-nav {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.main-header-nav li,
+.main-header-nav a {
+  display: block;
+}
+
+.main-header-nav a {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: white;
+}
+
+.main-header-nav a:hover {
+  text-decoration: underline;
+}
